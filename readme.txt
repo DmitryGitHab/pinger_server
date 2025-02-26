@@ -4,4 +4,4 @@
 
 запуск сервера: 'uvicorn main:app --reload --port 8000'
 
-![demo](demo.jpg)
+![demo](/demo.jpg)
