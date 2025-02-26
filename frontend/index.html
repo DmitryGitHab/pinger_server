@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Ping Monitor</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <h1>IP Ping Monitor</h1>
+    <form id="ipForm">
+        <input type="text" id="ipInput" placeholder="Enter IP address" required>
+        <button type="submit">Add IP</button>
+    </form>
+    <div class="actions">
+        <button onclick="exportCSV()">Export CSV</button>
+        <input type="file" id="csvFileInput" accept=".csv" style="display: none;">
+        <button onclick="document.getElementById('csvFileInput').click()">Import CSV</button>
+    </div>
+    <table id="ipTable">
+        <thead>
+            <tr>
+                <th onclick="sortTable('ip')">IP Address</th>
+                <th onclick="sortTable('ping')">Ping (ms)</th>
+                <th onclick="sortTable('packet_loss')">Packet Loss (%)</th>
+                <th onclick="sortTable('packet_received')">Packet Received (%)</th>
+                <th onclick="sortTable('last_successful_ping')">Last Successful Ping</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script src="static/script.js"></script>
+</body>
+</html>

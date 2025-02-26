@@ -1,0 +1,130 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+#ipForm {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#ipInput {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+#ipForm button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#ipForm button:hover {
+    background-color: #2980b9;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.actions button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.actions button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+tr {
+    transition: background-color 0.3s ease;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+tr.green {
+    background-color: #e8f5e9;
+}
+
+tr.red {
+    background-color: #ffebee;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button[onclick*="editIP"] {
+    background-color: #4caf50;
+    color: white;
+}
+
+button[onclick*="deleteIP"] {
+    background-color: #e74c3c;
+    color: white;
+}
