@@ -10,4 +10,4 @@
 Так же  актуальную информацию по серверам можно экспортировать в CSV Файл.
 
 
-![demo scrinshot](https://github.com/DmitryGitHab/pinger_server/blob/main/demo jpg) 
+![demo scrinshot](https://github.com/DmitryGitHab/pinger_server//demo.jpg) 
